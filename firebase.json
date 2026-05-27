@@ -6,6 +6,7 @@
   "hosting": [
     {
       "source": ".",
+      "site": "friendlychat-a5081",
       "ignore": [
         "firebase.json",
         "**/.*",
