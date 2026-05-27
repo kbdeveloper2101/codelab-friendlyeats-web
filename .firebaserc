@@ -2,6 +2,14 @@
   "projects": {
     "default": "friendlychat-a5081"
   },
-  "targets": {},
+  "targets": {
+    "friendlychat-a5081": {
+      "hosting": {
+        "friendlychat": [
+          "friendlychat-a5081"
+        ]
+      }
+    }
+  },
   "etags": {}
 }
