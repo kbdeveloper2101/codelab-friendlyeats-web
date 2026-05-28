@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import {
   Auth,
   authState,
-  signInWithPopup,
+  signInWithRedirect,
   GoogleAuthProvider,
   signOut,
   user,
@@ -75,7 +75,7 @@ export class ChatService {
 
   // Signs-in Friendly Chat.
   login() {
-    signInWithPopup(this.auth, this.provider).then((result) => {
+    signInWithRedirect(this.auth, this.provider).then((result) => {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         this.router.navigate(['/', 'chat']);
         return credential;

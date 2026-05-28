@@ -7,7 +7,7 @@ export const environment = {
     //messagingSenderId: 'SENDER_ID',
     //appId: 'APP_ID',
     apiKey: "AIzaSyBXUUDOzjgryoPTy7kbFwsmv56NkbTo_hY",
-    authDomain: "friendlychat-a5081.firebaseapp.com",
+    authDomain: "friendlyeats-codelab--friendlychat-a5081.us-east4.hosted.app",
     projectId: "friendlychat-a5081",
     storageBucket: "friendlychat-a5081.firebasestorage.app",
     messagingSenderId: "90648862113",
