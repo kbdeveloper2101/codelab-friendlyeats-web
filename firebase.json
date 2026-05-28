@@ -12,6 +12,18 @@
         "**/.*",
         "**/node_modules/**"
       ],
+      // ▼▼▼ ここから下のブロックを追記 ▼▼▼
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin-allow-popups"
+            }
+          ]
+        }
+      ],  
       "frameworksBackend": {
         "region": "us-central1"
       }
