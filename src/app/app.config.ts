@@ -16,7 +16,12 @@ export const appConfig: ApplicationConfig = {
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    provideMessaging(() => getMessaging()),
+    provideMessaging(() => {
+          if (typeof window !== 'undefined') {
+            return getMessaging(); // ブラウザの時だけ実行する
+          }
+          return null as any; // サーバーの時は何もしない
+    }),
     provideStorage(() => getStorage())
   ],
 };
